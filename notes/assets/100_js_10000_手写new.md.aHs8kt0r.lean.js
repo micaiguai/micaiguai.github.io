@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as _}from"./chunks/framework.ZaEuLwZf.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"100_js/10000_手写new.md","filePath":"100_js/10000_手写new.md"}'),a={name:"100_js/10000_手写new.md"};function n(s,r,o,c,p,d){return t(),_("div")}const f=e(a,[["render",n]]);export{m as __pageData,f as default};
