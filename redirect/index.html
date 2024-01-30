@@ -6,11 +6,9 @@
   <title>Document</title>
 </head>
 <body>
-  <input id="input" type="text">
-  <button id="btn">redirect</button>
   <script>
-    btn.onclick = e => {
-      window.location.replace(input.value)
+    window.onload = () => {
+      window.location.replace('http://localhost:8080/#/')
     }
   </script>
 </body>
