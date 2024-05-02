@@ -1,0 +1,158 @@
+{
+  "\u0000/Users/m/zhangshiyu/workspace/sandbox_canvas/node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js?commonjs-module": [],
+  "\u0000commonjsHelpers.js": [],
+  "\u0000plugin-vue:export-helper": [
+    "/sandbox_canvas/assets/_plugin-vue_export-helper-DlAUqK2U.js"
+  ],
+  "\u0000virtual:generated-layouts": [],
+  "\u0000vite/modulepreload-polyfill.js": [],
+  "\u0000vite/preload-helper.js": [],
+  "../../../../../@vite-plugin-pwa/virtual:pwa-register": [
+    "/sandbox_canvas/assets/virtual_pwa-register-DM-oRxRk.js"
+  ],
+  "../../../../../__uno.css": [],
+  "../../../../../vue-macros/define-models/use-vmodel": [
+    "/sandbox_canvas/assets/index-VFLkZSF5.js"
+  ],
+  "assets/app-!~{001}~.js-unocss-hash.css": [],
+  "index.html": [],
+  "locales/ar.yml": [
+    "/sandbox_canvas/assets/ar-HvujSz0t.js"
+  ],
+  "locales/de.yml": [
+    "/sandbox_canvas/assets/de-tIfILiOM.js"
+  ],
+  "locales/en.yml": [
+    "/sandbox_canvas/assets/en-uqoOIB2y.js"
+  ],
+  "locales/es.yml": [
+    "/sandbox_canvas/assets/es-DCBmW4A7.js"
+  ],
+  "locales/fr.yml": [
+    "/sandbox_canvas/assets/fr-C-cySWgT.js"
+  ],
+  "locales/id.yml": [
+    "/sandbox_canvas/assets/id-Cdl9masJ.js"
+  ],
+  "locales/it.yml": [
+    "/sandbox_canvas/assets/it-CZF_x55d.js"
+  ],
+  "locales/ja.yml": [
+    "/sandbox_canvas/assets/ja-bk9vkbha.js"
+  ],
+  "locales/ka.yml": [
+    "/sandbox_canvas/assets/ka-DrXH8DM7.js"
+  ],
+  "locales/ko.yml": [
+    "/sandbox_canvas/assets/ko-D1Wq3H7u.js"
+  ],
+  "locales/pl.yml": [
+    "/sandbox_canvas/assets/pl-x_vaV0QH.js"
+  ],
+  "locales/pt-BR.yml": [
+    "/sandbox_canvas/assets/pt-BR-CJ3Aq30r.js"
+  ],
+  "locales/ru.yml": [
+    "/sandbox_canvas/assets/ru-BQt2BLfU.js"
+  ],
+  "locales/tr.yml": [
+    "/sandbox_canvas/assets/tr-CMH1HB1g.js"
+  ],
+  "locales/uk.yml": [
+    "/sandbox_canvas/assets/uk-PdFIL57p.js"
+  ],
+  "locales/uz.yml": [
+    "/sandbox_canvas/assets/uz-D9sR80nb.js"
+  ],
+  "locales/vi.yml": [
+    "/sandbox_canvas/assets/vi-BsN4yQMQ.js"
+  ],
+  "locales/zh-CN.yml": [
+    "/sandbox_canvas/assets/zh-CN-CME5MBO5.js"
+  ],
+  "node_modules/.pnpm/@intlify+core-base@9.13.0/node_modules/@intlify/core-base/dist/core-base.mjs": [],
+  "node_modules/.pnpm/@intlify+message-compiler@9.13.0/node_modules/@intlify/message-compiler/dist/message-compiler.esm-browser.js": [],
+  "node_modules/.pnpm/@intlify+shared@9.13.0/node_modules/@intlify/shared/dist/shared.mjs": [],
+  "node_modules/.pnpm/@unhead+dom@1.9.5/node_modules/@unhead/dom/dist/index.mjs": [],
+  "node_modules/.pnpm/@unhead+shared@1.9.5/node_modules/@unhead/shared/dist/index.mjs": [],
+  "node_modules/.pnpm/@unhead+vue@1.9.5_vue@3.4.23_typescript@5.4.5_/node_modules/@unhead/vue/dist/shared/vue.cf295fb1.mjs": [],
+  "node_modules/.pnpm/@unhead+vue@1.9.5_vue@3.4.23_typescript@5.4.5_/node_modules/@unhead/vue/dist/shared/vue.f36acd1f.mjs": [
+    "/sandbox_canvas/assets/vue.f36acd1f-Dp3FCRxE.js"
+  ],
+  "node_modules/.pnpm/@unocss+reset@0.59.4/node_modules/@unocss/reset/tailwind.css": [],
+  "node_modules/.pnpm/@vue+reactivity@3.4.23/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [],
+  "node_modules/.pnpm/@vue+runtime-core@3.4.23/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [],
+  "node_modules/.pnpm/@vue+runtime-dom@3.4.23/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [],
+  "node_modules/.pnpm/@vue+shared@3.4.23/node_modules/@vue/shared/dist/shared.esm-bundler.js": [],
+  "node_modules/.pnpm/@vueuse+core@10.9.0_vue@3.4.23_typescript@5.4.5_/node_modules/@vueuse/core/index.mjs": [],
+  "node_modules/.pnpm/@vueuse+shared@10.9.0_vue@3.4.23_typescript@5.4.5_/node_modules/@vueuse/shared/index.mjs": [],
+  "node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs": [],
+  "node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js": [],
+  "node_modules/.pnpm/pinia@2.1.7_typescript@5.4.5_vue@3.4.23_typescript@5.4.5_/node_modules/pinia/dist/pinia.mjs": [],
+  "node_modules/.pnpm/unhead@1.9.5/node_modules/unhead/dist/index.mjs": [],
+  "node_modules/.pnpm/vite-ssg@0.23.6_critters@0.0.22_vite@5.2.9_@types+node@20.2.3_terser@5.17.6__vue-router@4.3.2_engkzrtvxlnmo2ttrgkexkpuqi/node_modules/vite-ssg/dist/index.mjs": [],
+  "node_modules/.pnpm/vite-ssg@0.23.6_critters@0.0.22_vite@5.2.9_@types+node@20.2.3_terser@5.17.6__vue-router@4.3.2_engkzrtvxlnmo2ttrgkexkpuqi/node_modules/vite-ssg/dist/shared/vite-ssg.5912142e.mjs": [],
+  "node_modules/.pnpm/vite-ssg@0.23.6_critters@0.0.22_vite@5.2.9_@types+node@20.2.3_terser@5.17.6__vue-router@4.3.2_engkzrtvxlnmo2ttrgkexkpuqi/node_modules/vite-ssg/dist/shared/vite-ssg.a009fbf1.mjs": [],
+  "node_modules/.pnpm/vue-demi@0.14.7_vue@3.4.23_typescript@5.4.5_/node_modules/vue-demi/lib/index.mjs": [],
+  "node_modules/.pnpm/vue-i18n@9.13.0_vue@3.4.23_typescript@5.4.5_/node_modules/vue-i18n/dist/vue-i18n.runtime.mjs": [],
+  "node_modules/.pnpm/vue-router@4.3.2_vue@3.4.23_typescript@5.4.5_/node_modules/vue-router/dist/vue-router.mjs": [],
+  "node_modules/.pnpm/workbox-window@7.0.0/node_modules/workbox-window/build/workbox-window.prod.es5.mjs": [
+    "/sandbox_canvas/assets/workbox-window.prod.es5-DFjpnwFp.js"
+  ],
+  "src/App.vue?vue&type=script&setup=true&lang.ts": [],
+  "src/components/QuarterCircle.vue?vue&type=script&setup=true&lang.ts": [],
+  "src/components/TheFooter.vue?vue&type=script&setup=true&lang.ts": [],
+  "src/components/TheInput.vue?vue&type=script&setup=true&lang.ts": [
+    "/sandbox_canvas/assets/index-VFLkZSF5.js"
+  ],
+  "src/composables/dark.ts": [],
+  "src/layouts/404.vue": [
+    "/sandbox_canvas/assets/404-R6C2rj0Z.js"
+  ],
+  "src/layouts/404.vue?vue&type=script&setup=true&lang.ts": [
+    "/sandbox_canvas/assets/404-R6C2rj0Z.js"
+  ],
+  "src/layouts/default.vue": [
+    "/sandbox_canvas/assets/default-QGp50obp.js"
+  ],
+  "src/layouts/home.vue": [
+    "/sandbox_canvas/assets/home-DAYIAIq1.js"
+  ],
+  "src/main.ts": [],
+  "src/modules/i18n.ts": [],
+  "src/modules/nprogress.ts": [],
+  "src/modules/pinia.ts": [],
+  "src/modules/pwa.ts": [],
+  "src/pages/README.md": [
+    "/sandbox_canvas/assets/README-CeFfzMP4.js"
+  ],
+  "src/pages/[...all].vue": [
+    "/sandbox_canvas/assets/_...all_-BigvDVYp.js"
+  ],
+  "src/pages/[...all].vue?vue&type=script&setup=true&lang.ts": [
+    "/sandbox_canvas/assets/_...all_-BigvDVYp.js"
+  ],
+  "src/pages/about.md": [
+    "/sandbox_canvas/assets/about-GbCNzrCc.js"
+  ],
+  "src/pages/hi/[name].vue": [
+    "/sandbox_canvas/assets/_name_-C5HF6cpN.js"
+  ],
+  "src/pages/hi/[name].vue?vue&type=script&setup=true&lang.ts": [
+    "/sandbox_canvas/assets/_name_-C5HF6cpN.js"
+  ],
+  "src/pages/index.vue": [
+    "/sandbox_canvas/assets/index-VFLkZSF5.js"
+  ],
+  "src/pages/index.vue?vue&type=script&setup=true&lang.ts": [
+    "/sandbox_canvas/assets/index-VFLkZSF5.js"
+  ],
+  "src/stores/user.ts": [
+    "/sandbox_canvas/assets/user-_CgFLsgf.js"
+  ],
+  "src/styles/main.css": [],
+  "virtual:/vue-router/auto/route-block": [
+    "/sandbox_canvas/assets/route-block-B_A1xBdJ.js"
+  ],
+  "virtual:vue-router/auto-routes": []
+}
