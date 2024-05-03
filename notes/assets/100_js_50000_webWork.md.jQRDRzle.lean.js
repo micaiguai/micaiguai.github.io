@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as r}from"./chunks/framework.7z1nwNYX.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"100_js/50000_webWork.md","filePath":"100_js/50000_webWork.md"}'),o={name:"100_js/50000_webWork.md"};function a(s,_,c,n,p,d){return t(),r("div")}const f=e(o,[["render",a]]);export{m as __pageData,f as default};
