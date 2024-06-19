@@ -1,1 +1,0 @@
-import{_ as e,c as t,o}from"./chunks/framework.DtKRdLJw.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"notes/100_js/50000_webWork.md","filePath":"notes/100_js/50000_webWork.md"}'),r={name:"notes/100_js/50000_webWork.md"};function s(a,_,n,c,p,d){return o(),t("div")}const f=e(r,[["render",s]]);export{m as __pageData,f as default};

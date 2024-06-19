@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.DtKRdLJw.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"notes/500_node/200_execa.md","filePath":"notes/500_node/200_execa.md"}'),o={name:"notes/500_node/200_execa.md"};function n(c,s,_,r,d,p){return a(),t("div")}const f=e(o,[["render",n]]);export{m as __pageData,f as default};

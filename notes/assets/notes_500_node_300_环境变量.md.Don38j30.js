@@ -1,1 +1,0 @@
-import{_ as e,c as t,o}from"./chunks/framework.DtKRdLJw.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"notes/500_node/300_环境变量.md","filePath":"notes/500_node/300_环境变量.md"}'),_={name:"notes/500_node/300_环境变量.md"};function n(a,s,r,c,d,p){return o(),t("div")}const f=e(_,[["render",n]]);export{m as __pageData,f as default};
