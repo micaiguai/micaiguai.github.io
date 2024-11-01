@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <script src="../lib/rtc-4.0.7.9.min.js"></script> -->
+  <script src="../lib/rtc-4.0.8.0.min.js"></script>
+  <script src="../lib/isMobile.min.js"></script>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/meeting-room.css">
+  <title>元诊室</title>
+</head>
+
+<body>
+  <!-- 登录页 -->
+  <div class="join">
+    <div class="joinMeeting_text">
+      加入会议
+    </div>
+    <div class="joinMeeting">
+      <div style="position: relative">
+        <input type="text" placeholder="请输入会议号" class="loginInfo" id="meetingNum">
+        <span class="meetingNumError">请输入会议号</span>
+        <input type="text" placeholder="请输入用户名" class="loginInfo" id="userName">
+        <span class="userNameError">请输入用户名</span>
+        <button class="btn" onclick="joinRoom()">加入</button>
+      </div>
+    </div>
+  </div>
+  <!-- 会议页 -->
+  <div class="meeting-room-wrapper" style="display: none;">
+    <div class="logo-left-top" style="position: fixed; left: 16px; top: 32px;">
+    </div>
+    <div class="logo-right-bottom" style="position: fixed; right: 32px; bottom: 88px;">
+      <!-- <img style="height: 36px;" src="./images/yilianti.png" alt="">
+      <img style="height: 36px;" src="./images/xintoushuke.png" alt="">
+      <img style="height: 36px;" src="./images/kupasi-2.png" alt=""> -->
+      <img
+        style="height: 32px; margin-right: 24px; transform: translateY(2px);"
+        src='./images/yilianti-2.png'
+      />
+      <img
+        style="height: 24px; margin-right: 24px;"
+        src='./images/xintoushuke.png'
+      />
+      <img
+        style="height: 36px; transform: translateY(-2px);"
+        src='./images/kupasi-2.png'
+      />
+    </div>
+    <div class="audio"></div>
+    <div class="meeting-room-content">
+      <div class="meeting-room-content__left">
+        <div class="camera-video-list-wrapper" ondblclick="enterScreenFull()"></div>
+        <div class="chat-wrapper">
+          <div class="chat_content">
+            <div class="chat_screen"></div>
+            <div class="chat_massage">
+              <textarea placeholder="请输入消息..." id="message" onkeydown="if(event.keyCode==13) messageSend()"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="meeting-room-content__decorator" style="display: flex; align-items: flex-end;">
+        <div class="digital-human-wrapper" style="cursor: pointer;">
+          <img
+            class="virtual-digital-human-animate" 
+            style="width: 120px; height: 240px; object-fit: cover; display: none;"
+            src="./images/virtual-digital-human-v2.gif"
+            alt="" 
+            srcset=""
+          >
+          <img 
+            class="virtual-digital-human-static" 
+            style="width: 120px; height: 240px; object-fit: cover;"
+            src="./images/virtual-digital-human-v2.png"
+            alt="" 
+            srcset=""
+          >
+        </div>
+      </div>
+      <div class="meeting-room-content__main">
+        <div class="screen" id="screen_screen" style="display: none;">
+          <video id="shareVideo" class="shareVideo" autoplay muted></video>
+        </div>
+        <div class="board" id="board_board" style="display: none;">
+          <div class="board-tool" id="board-tool">
+            <div class="tool-item" onclick="chooseMouse()">
+              <i class="icon_mouse"></i>
+              <p>鼠标</p>
+            </div>
+            <div class="tool-item" onclick="startHlightPoint()">
+              <i class="icon_boarder_laserPen"></i>
+              <p>激光笔</p>
+            </div>
+            <div class="tool-item boarder_pen">
+              <i class="icon_boarder_pen"></i>
+              <p>笔</p>
+              <div class="choose_pen">
+                <i class="icon_brokenLine" onclick="selectChangeType(5)"></i>
+                <i class="icon_straightLine" onclick="selectChangeType(2)"></i>
+                <i class="icon_arrows" onclick="selectChangeType(999)"></i>
+                <i class="icon_ellipse" onclick="selectChangeType(4)"></i>
+                <i class="icon_rectangle" onclick="selectChangeType(3)"></i>
+                <i class="icon_fillRectangle" onclick="selectChangeType(333)"></i>
+                <i class="icon_rhombus" onclick="selectChangeType(11)"></i>
+                <i class="icon_tick" onclick="selectChangeType(13)"></i>
+                <i class="icon_fixationArrows" onclick="selectChangeType(12)"></i>
+                <i class="icon_cross" onclick="selectChangeType(14)"></i>
+              </div>
+            </div>
+            <div class="tool-item">
+              <input style="width: 23px; height: 23px;" id="colorIpt" onchange="selectToolColorChange()" type="color">
+              <p>颜色</p>
+            </div>
+            <div class="tool-item" onclick="clearAnnotation()">
+              <i class="icon_boarder_eraser"></i>
+              <p>橡皮擦</p>
+            </div>
+            <div class="tool-item" onclick="eraser()">
+              <i class="icon_boarder_clear"></i>
+              <p>清除</p>
+            </div>
+            <div class="tool-item" onclick="download()">
+              <i class="icon_boarder_save"></i>
+              <p>保存</p>
+            </div>
+
+            <div class="tool-item">
+              <i class="icon_img_upload"></i>
+              <p>上传图</p>
+            </div>
+            <input type="file" class="file_upload_btn" onchange="uploadImg(this)" />
+            <div class="tool-item" onclick="setAllowEditImg()">
+              <i class="icon_img_edit"></i>
+              <p>编辑图</p>
+            </div>
+            <div class="tool-item" onclick="rotateImg()">
+              <i class="icon_img_rotate"></i>
+              <p>旋转图</p>
+            </div>
+            <div class="tool-item" onclick="delImg()">
+              <i class="icon_img_delete"></i>
+              <p>删除图</p>
+            </div>
+            <div class="tool-item" onclick="scaleImg(true, 0.1)">
+              <i class="icon_img_enlarge"></i>
+              <p>放大图</p>
+            </div>
+            <div class="tool-item" onclick="scaleImg(false, 0.1)">
+              <i class="icon_img_narrow"></i>
+              <p>缩小图</p>
+              </p>
+            </div>
+            <div class="tool-item" onclick="startTextInput()">
+              <i class="icon_text"></i>
+              <p>文字</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="meeting-room-tool">
+      <div class="bottom_left">
+        <div class="button microphone" onclick="(isOpenAudioShow == true?openMicrophone():closeMicrophone())">
+          <i id="microphone" class="closeMicrophone"></i>
+          <span>解除静音</span>
+        </div>
+        <div class="button camera" onclick="(isOpenVideoShow == true?openCamera():closeCamera())">
+          <i id="camera" class="closeCamera"></i>
+          <span>开启视频</span>
+        </div>
+        <div class="button record" onclick="(isStartRecord == false?startRecord():stopRecord())">
+          <i id="record" class="startRecord"></i>
+          <span>录制音频</span>
+        </div>
+        <div class="smallBtn" style="display: none;">
+          <img src="./images/top.png" alt="">
+        </div>
+      </div>
+      <div class="bottom_center">
+        <div class="button" onclick="openParticipant()">
+          <span id="participantList"></span>
+          <img src="./images/user.png" alt="">
+          <span>参会者</span>
+        </div>
+        <div class="loading-text" style="color: #fff; line-height: 60px;">共享功能初始化中...</div>
+        <div class="button board" style="display: none;" id="board" onclick="(selfShareBoardFlag == false?showBoard():hideBoard())">
+          <span>开启白板</span>
+        </div>
+        <div class="button screen" style="display: none;" id="screen"
+          onclick="(selfShareScreenFlag == false?openScreenAndPub():closeScreenAndUnpub())">
+          <span>开启共享</span>
+        </div>
+      </div>
+      <div class="bottom_right">
+        <div class="button" id="leave">
+          <img src="./images/leave.png" alt="">
+          <span>离开</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="participant">
+    <div class="title">
+      <div>
+        <span>参会者</span>
+        <span class="participantNum"></span>
+      </div>
+      <img src="./images/closepage.png" alt="" style="cursor: pointer">
+    </div>
+    <div class="content"></div>
+  </div>
+  <div class="leave">
+    <div class="leave_title">
+      <span>离开会议</span>
+      <img src="./images/closepage.png" alt="" style="cursor: pointer">
+    </div>
+    <div class="leave_content">
+      <div class="leave_test">您是否要离开会议？</div>
+      <div class="leave_button">
+        <button class="leaveMeeting" onclick="leaveRoom()">离开会议</button>
+        <button class="cancel">取消</button>
+      </div>
+    </div>
+  </div>
+  <div class="cameraModel">
+    <input id="single" type="radio" name="cameraModel" value="单摄像头模式" checked>
+    <label for="single">单摄像头模式</label>
+    <input id="more" type="radio" name="cameraModel" value="多摄像头模式">
+    <label for="more">多摄像头模式</label>
+  </div>
+  <div class="hintMsg">
+  </div>
+  <script src="../lib/jquery.min.js"></script>
+  <script src="../common/restAPI.js"></script>
+  <script src="../lib/config.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/index.js"></script>
+  <!-- <script src="./js/handle-chat-iframe.js"></script> -->
+</body>
+
+</html>

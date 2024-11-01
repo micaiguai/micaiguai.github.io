@@ -1,0 +1,706 @@
+.meeting-room-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.meeting-room-content {
+  overflow: hidden;
+  flex: 1;
+  /* background: url('../images/bg.png') no-repeat; */
+  background: url('../images/yuanzhenshi-bg-2.png') no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+
+.meeting-room-tool {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: #2d3947;
+}
+
+.bottom_left,
+.bottom_center,
+.bottom_right {
+  width: 33.33%;
+  display: flex;
+}
+
+.button {
+  display: flex;
+  min-width: 70px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.chatNum {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f00;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  opacity: 0;
+}
+
+#participantList {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  font-size: 12px;
+}
+
+.smallBtn {
+  display: flex;
+  width: 30px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.bottom div div:hover {
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0.8;
+}
+
+.startRecord {
+  width: 31px;
+  height: 34px;
+  background: url('../images/startRecord.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.stopRecord {
+  width: 31px;
+  height: 34px;
+  background: url('../images/stopRecord.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.closeCamera {
+  width: 31px;
+  height: 34px;
+  background: url('../images/closeCamera.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.openCamera {
+  width: 31px;
+  height: 34px;
+  background: url('../images/camera.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.openMicrophone {
+  width: 26px;
+  height: 34px;
+  background: url('../images/microphone.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.closeMicrophone {
+  width: 26px;
+  height: 34px;
+  background: url('../images/closeMicrophone.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.bottom_center {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bottom_right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.meeting-room-content__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20vw;
+}
+
+.chat-wrapper {
+  width: 100%;
+  height: 320px;
+}
+
+.chat_title {
+  width: 100%;
+  height: 30px;
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  display: none;
+}
+
+.chat_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1aa;
+  cursor: default;
+  box-sizing: border-box;
+  border: 1px solid #252f39;
+}
+
+.chat_screen {
+  width: 100%;
+  flex: 1;
+  min-height: 180px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  /* background: #ececec; */
+  overflow: auto;
+}
+
+.chat_tool {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  line-height: 30px;
+  background: #ececec;
+}
+
+.chat_massage {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.chat_content textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  overflow: auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-color: #fff;
+  outline: none;
+}
+
+.meeting-room-content__main {
+  flex: 1;
+  position: relative;
+  height: 100%;
+}
+
+.camera-video-wrapper video {
+  width: 100%;
+}
+
+.participant {
+  width: 400px;
+  height: 360px;
+  background: #252f39;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -180px;
+  border-radius: 5px;
+  display: none;
+}
+
+.participant .title {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.participant .content {
+  width: 100%;
+  height: 330px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #f1f1f1;
+  box-sizing: border-box;
+  border-left: 6px solid #252f39;
+  border-right: 6px solid #252f39;
+  border-bottom: 6px solid #252f39;
+}
+
+.participant_item {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+  position: relative;
+}
+
+.participant_item_head {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2dcaff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.participant_item_name {
+  width: 270px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.participant_item_state {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.participant_item_state i {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.icon_participantMir {
+  background: url('../images/icon-participantMir-close.png') no-repeat;
+  background-size: 100%;
+}
+
+.icon_participantCam {
+  background: url('../images/icon-participantCam-close.png') no-repeat;
+  background-size: 100%;
+}
+
+.leave {
+  display: none;
+  z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 170px;
+  background: #252f39;
+  border-radius: 5px;
+}
+
+.leave_title {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.leave_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  background: #f1f1f1;
+  box-sizing: border-box;
+  border-left: 6px solid #252f39;
+  border-right: 6px solid #252f39;
+  border-bottom: 6px solid #252f39;
+}
+
+.leave_test {
+  width: 100%;
+  height: 94px;
+  box-sizing: border-box;
+  padding: 18px 27px;
+  font-size: 14px;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.leave_button {
+  width: 100%;
+  height: 39px;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+}
+
+.leave_button .leaveMeeting {
+  width: 78px;
+  height: 24px;
+  margin: 0 5px;
+  display: block;
+  line-height: 24px;
+  border-radius: 12px;
+  background: #4488c8;
+  color: #fff;
+  border: 1px solid #427fc2;
+  cursor: pointer;
+}
+
+.leave_button .cancel {
+  width: 78px;
+  height: 24px;
+  margin: 0 5px;
+  display: block;
+  line-height: 24px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  color: #000;
+  border: 1px solid #cacac9;
+  cursor: pointer;
+}
+
+#messageUserId {
+  border-radius: 5px;
+}
+
+.cameraModel {
+  position: absolute;
+  left: 145px;
+  bottom: 65px;
+  width: 210px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, .2);
+  padding: 10px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+}
+
+.cameraModel label {
+  margin-right: 10px;
+}
+
+.chat_screen_text {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.chat_screen_text .name {
+  padding: 5px 10px;
+}
+
+.chat_screen_text .text {
+  background: #2dcaff;
+  border-radius: 10px;
+  height: 31px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.hintMsg {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 1300px;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -650px;
+  background: rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+  z-index: 99999;
+  border-radius: 65px;
+  display: none;
+  text-align: center;
+  line-height: 80px;
+}
+
+.shareVideo {
+  /* width: 900px;
+height: 450px; */
+  width: 100%;
+  height: 100%;
+}
+
+#screen_screen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#board_board {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* height: 400px; */
+  /* position: absolute; */
+  /* top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  /* display: flex;
+  justify-content: center; */
+}
+
+.board-tool {
+  width: 100%;
+  display: flex;
+  /* width: 900px;
+  height: 60px; */
+  background: #222;
+  /* position: absolute; */
+  /* left: 50%;
+  transform: translateX(-50%);
+  top: -60px;
+  justify-content: space-evenly;
+  align-items: center; */
+  z-index: 10;
+}
+
+.tool-item {
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tool-item i {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-size: 100% 100%;
+}
+
+.tool-item p {
+  width: 100%;
+  text-align: center;
+}
+
+.icon_mouse {
+  background: url('../img/board_mouse.png');
+}
+
+.icon_boarder_laserPen {
+  background: url('../img/board_laserPen.png');
+}
+
+.icon_boarder_pen {
+  background: url('../img/board_pen.png');
+}
+
+.icon_boarder_eraser {
+  background: url('../img/board_eraser.png');
+}
+
+.icon_boarder_undo {
+  background: url('../img/board_undo.png');
+}
+
+.icon_boarder_redo {
+  background: url('../img/board_redo.png');
+}
+
+.icon_boarder_clear {
+  background: url('../img/board_clear.png');
+}
+
+.icon_boarder_save {
+  background: url('../img/board_save.png');
+}
+
+.icon_img_upload {
+  background: url('../img/board_upload.png');
+}
+
+.icon_img_edit {
+  background: url('../img/board_img.png');
+}
+
+.icon_img_rotate {
+  background: url('../img/board_rotate.png');
+}
+
+.icon_img_delete {
+  background: url('../img/board_delete.png');
+}
+
+.icon_img_enlarge {
+  background: url('../img/board_enlarge.png');
+}
+
+.icon_img_narrow {
+  background: url('../img/board_narrow.png');
+}
+
+.icon_text {
+  background: url('../img/board_text.png');
+}
+
+
+
+.boarder_pen {
+  position: relative;
+}
+
+.boarder_pen:hover .choose_pen {
+  display: block;
+}
+
+.choose_pen {
+  width: 500px;
+  height: 60px;
+  position: absolute;
+  background: #222;
+  top: 0;
+  right: 0px;
+  display: none;
+}
+
+.choose_pen i {
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+  display: block;
+  float: left;
+  margin: 15px 15px;
+}
+
+.icon_brokenLine {
+  background: url('../img/1-1.png');
+}
+
+.icon_straightLine {
+  background: url('../img/1-2.png');
+}
+
+.icon_arrows {
+  background: url('../img/3-2.png');
+}
+
+.icon_ellipse {
+  background: url('../img/1-4.png');
+}
+
+.icon_rectangle {
+  background: url('../img/1-3.png');
+}
+
+.icon_fillRectangle {
+  background: url('../img/2-3.png');
+}
+
+.icon_rhombus {
+  background: url('../img/3-1.png');
+}
+
+.icon_tick {
+  background: url('../img/2-5.png');
+}
+
+.icon_fixationArrows {
+  background: url('../img/1-5.png');
+}
+
+.icon_cross {
+  background: url('../img/3-5.png');
+}
+
+.boardSetDom {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #222;
+  margin-top: -100px;
+  margin-left: -250px;
+  z-index: 100;
+  background: #fff;
+}
+
+.boardSetDom button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.file_upload_btn {
+  position: absolute;
+  height: 60px;
+  left: 480px;
+  right: 0;
+  display: inline-block;
+  width: 60px;
+  z-index: 100;
+  cursor: pointer;
+  background: red;
+  opacity: 0;
+}

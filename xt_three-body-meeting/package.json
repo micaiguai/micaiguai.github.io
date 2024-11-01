@@ -1,0 +1,12 @@
+{
+  "name": "xt_three-body-meeting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "serve . -p 3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,29 @@
+// 这是开发环境的配置，部署至线上时，会读取线上的配置
+// 提供给前端页面读取区分业务
+// 只有meta对象里的属性可修改，可随意添加修改
+// 其余字段不要修改
+{
+  // 版本
+  "version": 1,
+  // 项目
+  "projects": [
+    {
+      // 项目名称
+      "name": "元诊室",
+      // 配置
+      "meta": {
+        // 一体机
+        // "serverURL": "192.168.1.71:7006",
+        // "accessKey": "1RL1CBCASVAVKHVKURSMQXFHPHYVQ4WD",
+        // "secretKey": "SAZO4WDW1EPYAZGXQPIBWP4XLOU38I1O"
+        // 三体
+        "serverURL": "avd.nice2meet.cn:9630",
+        "accessKey": "demo_access",
+        "secretKey": "demo_secret",
+        "dify": {
+          "token": "8poNyegjhYCecJFB"
+        }
+      }
+    }
+  ]
+}
