@@ -2,6 +2,10 @@
   "\u0000plugin-vue:export-helper": [],
   "\u0000vite/modulepreload-polyfill.js": [],
   "\u0000vite/preload-helper.js": [],
+  "\u0000~build/console": [],
+  "\u0000~build/git": [],
+  "\u0000~build/package": [],
+  "\u0000~build/time": [],
   "../../../../../__vue-router/auto-routes": [],
   "index.html": [],
   "node_modules/.pnpm/@unhead+vue@2.0.14_vue@3.5.18_typescript@5.8.3_/node_modules/@unhead/vue/dist/client.mjs": [],
@@ -27,7 +31,7 @@
   "src/App.vue": [],
   "src/__uno.css": [],
   "src/components/Avatar.vue": [
-    "/me/assets/index-BLOB28cY.js"
+    "/me/assets/index-BLcGXNZL.js"
   ],
   "src/components/Footer.vue": [],
   "src/components/Link.vue": [],
@@ -36,6 +40,6 @@
   "src/main.css": [],
   "src/main.ts": [],
   "src/pages/index.vue": [
-    "/me/assets/index-BLOB28cY.js"
+    "/me/assets/index-BLcGXNZL.js"
   ]
 }
