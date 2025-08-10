@@ -1,0 +1,41 @@
+{
+  "\u0000plugin-vue:export-helper": [],
+  "\u0000vite/modulepreload-polyfill.js": [],
+  "\u0000vite/preload-helper.js": [],
+  "../../../../../__vue-router/auto-routes": [],
+  "index.html": [],
+  "node_modules/.pnpm/@unhead+vue@2.0.14_vue@3.5.18_typescript@5.8.3_/node_modules/@unhead/vue/dist/client.mjs": [],
+  "node_modules/.pnpm/@unhead+vue@2.0.14_vue@3.5.18_typescript@5.8.3_/node_modules/@unhead/vue/dist/shared/vue.BYLJNEcq.mjs": [],
+  "node_modules/.pnpm/@unocss+reset@66.4.2/node_modules/@unocss/reset/sanitize/assets.css": [],
+  "node_modules/.pnpm/@unocss+reset@66.4.2/node_modules/@unocss/reset/sanitize/sanitize.css": [],
+  "node_modules/.pnpm/@vue+reactivity@3.5.18/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [],
+  "node_modules/.pnpm/@vue+runtime-core@3.5.18/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [],
+  "node_modules/.pnpm/@vue+runtime-dom@3.5.18/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [],
+  "node_modules/.pnpm/@vue+shared@3.5.18/node_modules/@vue/shared/dist/shared.esm-bundler.js": [],
+  "node_modules/.pnpm/@vueuse+core@13.6.0_vue@3.5.18_typescript@5.8.3_/node_modules/@vueuse/core/index.mjs": [],
+  "node_modules/.pnpm/@vueuse+shared@13.6.0_vue@3.5.18_typescript@5.8.3_/node_modules/@vueuse/shared/index.mjs": [],
+  "node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs": [],
+  "node_modules/.pnpm/unhead@2.0.14/node_modules/unhead/dist/client.mjs": [],
+  "node_modules/.pnpm/unhead@2.0.14/node_modules/unhead/dist/shared/unhead.BpRRHAhY.mjs": [],
+  "node_modules/.pnpm/unhead@2.0.14/node_modules/unhead/dist/shared/unhead.DH45uomy.mjs": [],
+  "node_modules/.pnpm/unhead@2.0.14/node_modules/unhead/dist/shared/unhead.DZbvapt-.mjs": [],
+  "node_modules/.pnpm/unhead@2.0.14/node_modules/unhead/dist/shared/unhead.yem5I2v_.mjs": [],
+  "node_modules/.pnpm/vite-ssg@28.0.0_unhead@2.0.14_vite@7.1.1_jiti@2.5.1_terser@5.43.1_yaml@2.8.0__vue-route_53ade77f14968cb7791d69ee3cc87db0/node_modules/vite-ssg/dist/index.mjs": [],
+  "node_modules/.pnpm/vite-ssg@28.0.0_unhead@2.0.14_vite@7.1.1_jiti@2.5.1_terser@5.43.1_yaml@2.8.0__vue-route_53ade77f14968cb7791d69ee3cc87db0/node_modules/vite-ssg/dist/shared/vite-ssg.C6pK7rvr.mjs": [],
+  "node_modules/.pnpm/vite-ssg@28.0.0_unhead@2.0.14_vite@7.1.1_jiti@2.5.1_terser@5.43.1_yaml@2.8.0__vue-route_53ade77f14968cb7791d69ee3cc87db0/node_modules/vite-ssg/dist/shared/vite-ssg.ETIvV-80.mjs": [],
+  "node_modules/.pnpm/vue-router@4.5.1_vue@3.5.18_typescript@5.8.3_/node_modules/vue-router/dist/vue-router.mjs": [],
+  "src/App.vue": [],
+  "src/__uno.css": [],
+  "src/components/Avatar.vue": [
+    "/me/assets/index-DPDr7Lcd.js"
+  ],
+  "src/components/Footer.vue": [],
+  "src/components/Link.vue": [],
+  "src/components/Navbar.vue": [],
+  "src/components/ToggleTheme.vue?vue&type=script&setup=true&lang.ts": [],
+  "src/main.css": [],
+  "src/main.ts": [],
+  "src/pages/index.vue": [
+    "/me/assets/index-DPDr7Lcd.js"
+  ]
+}
